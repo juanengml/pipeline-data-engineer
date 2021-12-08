@@ -8,7 +8,7 @@ Requisitos
 
 ``` bash
 
-$ docker run  -e GRANT_SUDO=yes -it -p 8888:8888 elyra/elyra:dev jupyter lab --debug
+$ docker run -u root  -e GRANT_SUDO=yes -it -p 8888:8888 elyra/elyra:dev jupyter lab --debug --allow-root
 
 ```
 !["Imagem ilustrativa"](elyra-pipelines.gif)
