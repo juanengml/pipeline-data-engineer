@@ -18,6 +18,9 @@ $ source env/bin/activate
 (env) $ python src/infra.py 
 
 ```
+
+![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/src/2021-12-12-14-28-21.gif)
+
 ## Configurando Banco de dados e Orquestrador 
 
 #### Subindo banco de dados no Portainer (MySQL)
