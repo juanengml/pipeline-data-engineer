@@ -1,5 +1,6 @@
 # Arquitetura de dados (End to End)
-![](src/Arquitetura de Dados.png)
+
+![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/src/Arquitetura%20de%20Dados.png)
 
 ## Montando infra 
 ``` bash
@@ -21,60 +22,30 @@ $ source env/bin/activate
 ## Rodar Pipeline
   - Clocar Repo 
 
-- Rodar pipeline Etapa 1
+#### ✔️ Rodar pipeline Etapa 1
+
+![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/Etapa%201/2021-12-11-23-43-07.gif)
   
-- Rodar pipeline Etapa 2
-  
+#### Resultados Etapa 1 (perguntas)
+
+
+
+#### ✔️ Rodar pipeline Etapa 2
+![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/Etapa%202/Etapa%202%20-%20Running.gif)
+
+
+#### Resultados Etapa 2 (perguntas)
+
 
 --- 
 
-# Ambiente 
 
-Requisitos
+# Fontes 
 
-- Docker instalado
-
-
-## Ferramentas Utilizadas 
-
-### Elyra Notebook 
-
-``` bash
-
-$ docker run -u root  -e GRANT_SUDO=yes -it -p 8888:8888 elyra/elyra:dev jupyter lab --debug --allow-root
-
-```
-!["Imagem ilustrativa"](elyra-pipelines.gif)
-
-Fonte: https://github.com/elyra-ai/elyra
-
-### Portainer CE
-
-
-``` bash
-
-$ docker volume create portainer_data
-
-$ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
-
-```
-![Portainer](https://media-exp1.licdn.com/dms/image/C5112AQFrlut0AkEykw/article-inline_image-shrink_1000_1488/0/1541068458082?e=1642032000&v=beta&t=qQnplESdqvDpNccgiCBFI6ueUU8Zq4PPfiaWKxkBMXM)
-
-Fonte: https://docs.portainer.io/v/ce-2.9/start/install/server/docker/linux
-
-
-### Metabase
-
-
-``` bash
-
-$ docker run -d -p 3000:3000 --name metabase metabase/metabase
-
-
-```
-![Metabase](https://www.metabase.com/images/posts/metabase-0.40/editing-dashboard.gif)
-
-Fonte: https://www.metabase.com/
+Docker: https://www.docker.com/
+Portainer: https://www.portainer.io/
+Elyra: https://github.com/elyra-ai/elyra
+Metabase: https://www.metabase.com/
 
 
 
