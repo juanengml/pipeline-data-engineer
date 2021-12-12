@@ -9,7 +9,7 @@ from Enriquecimento_UF import Logs
 console = Console()
 
 
-db = dataset.connect('mysql://root:mysql@192.168.29.145:62614/mydatabase')
+db = dataset.connect('mysql://root:mysql@192.168.15.66:58631/mydatabase')
 
 bases = listdir("base_gerada")
 
@@ -57,7 +57,7 @@ def main():
 
         console.success("FIM PROCESSO")
         console.log("Tempo Exec: "+str(dt.now() - inicio))
-
+        del df   
         console.info("Tempo de Execução: " + str(dt.now()-inicio))
         
   console_log.info("Fim do processo")

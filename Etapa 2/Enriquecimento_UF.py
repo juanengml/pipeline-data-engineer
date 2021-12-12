@@ -6,16 +6,18 @@ import dataset
 
 console = Console()
 
-db = dataset.connect('mysql://root:mysql@192.168.29.145:62614/mydatabase')
+db = dataset.connect('mysql://root:mysql@192.168.15.66:58631/mydatabase')
 table = db['tlb_logs']
 
 class Logs(object):
     def __init__(self, etapa):
         self.etapa = etapa
+        self.db = dataset.connect('mysql://root:mysql@192.168.15.66:58631/mydatabase')
+        self.table = self.db['tlb_logs']
         
     def info(self,msg):
         console.info(self.etapa+ " | "+msg)
-        table.insert(dict(etapa=self.etapa ,status=msg,dt=str(dt.now())))
+        self.table.insert(dict(etapa=self.etapa ,status=msg,dt=str(dt.now())))
         
     
 class DataQuality(object):
