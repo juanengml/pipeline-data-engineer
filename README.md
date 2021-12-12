@@ -27,7 +27,7 @@ $ source env/bin/activate
 ![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/Etapa%201/2021-12-11-23-43-07.gif)
   
 #### Resultados Etapa 1 (perguntas)
-
+![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/Etapa%201/Resultados%20Etapa%201.PNG)
 
 
 #### ✔️ Rodar pipeline Etapa 2
