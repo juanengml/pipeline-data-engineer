@@ -15,13 +15,18 @@ $ source env/bin/activate
 ```
 ## Configurando Banco de dados e Orquestrador 
 
-* LINK - 
+* LINK - https://github.com/juanengml/talent-data-analyst-lv4/blob/main/src/README.md
 
   
 ## Rodar Pipeline
   - Clocar Repo 
-  - Rodar pipeline Etapa 1
-  - Rodar pipeline Etapa 2
+
+- Rodar pipeline Etapa 1
+  
+- Rodar pipeline Etapa 2
+  
+
+--- 
 
 # Ambiente 
 

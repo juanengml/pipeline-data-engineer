@@ -20,8 +20,13 @@ $ source env/bin/activate
   
 ## Rodar Pipeline
   - Clocar Repo 
-  - Rodar pipeline Etapa 1
-  - Rodar pipeline Etapa 2
+
+- Rodar pipeline Etapa 1
+  
+- Rodar pipeline Etapa 2
+  
+
+--- 
 
 # Ambiente 
 
