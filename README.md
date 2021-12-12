@@ -2,19 +2,9 @@
 
 ![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/src/Arquitetura%20de%20Dados.png)
 
-## Montando infra 
-``` bash
+## Requisitos 
 
-$ virtualenv env --python=python3
-
-$ source env/bin/activate  
-
-(env) $ pip install -r requirements.txt 
-
-(env) $ python src/infra.py 
-
-```
-## Configurando Banco de dados e Orquestrador 
+PS: Siga o passo a passo no linka abaixo
 
 * LINK - https://github.com/juanengml/talent-data-analyst-lv4/blob/main/src/README.md
 
@@ -43,8 +33,11 @@ $ source env/bin/activate
 # Fontes 
 
 Docker: https://www.docker.com/
+
 Portainer: https://www.portainer.io/
+
 Elyra: https://github.com/elyra-ai/elyra
+
 Metabase: https://www.metabase.com/
 
 
