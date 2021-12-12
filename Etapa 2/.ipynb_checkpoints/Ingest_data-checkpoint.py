@@ -25,7 +25,7 @@ def main():
   console_log.info("Carregando dados para Database")
   for csv in bases:
     if csv.split(".")[0].isnumeric() != False:
-        inicio = dt.now()  
+        inicio = dt.now()   
     
         print("base_gerada/"+csv)
         
