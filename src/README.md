@@ -22,11 +22,13 @@ $ source env/bin/activate
 
 #### Subindo banco de dados no Portainer (MySQL)
 
-![](https://juanengml-github.s3.amazonaws.com/UP+DATABASE+PORTAINER.gif)  
+![1](https://juanengml-github.s3.amazonaws.com/UP+DATABASE+PORTAINER.gif) 
+
+
 
 #### Configurar Acesso do MySQL no Metabase 
 
-![](https://juanengml-github.s3.amazonaws.com/Configure+Metabase.gif)
+![1](https://juanengml-github.s3.amazonaws.com/Configure+Metabase.gif)
 
 
 ## Fonte - Ferramentas Utilizadas 
