@@ -1,21 +1,49 @@
-# Ambiente Gerado
+# Arquitetura de dados (End to End)
+![](src/Arquitetura de Dados.png)
+
+## Montando infra 
+``` bash
+
+$ virtualenv env --python=python3
+
+$ source env/bin/activate  
+
+(env) $ pip install -r requirements.txt 
+
+(env) $ python src/infra.py 
+
+```
+## Configurando Banco de dados e Orquestrador 
+
+* LINK - 
+
+  
+## Rodar Pipeline
+  - Clocar Repo 
+  - Rodar pipeline Etapa 1
+  - Rodar pipeline Etapa 2
+
+# Ambiente 
 
 Requisitos
 
 - Docker instalado
 
-## Elyra Notebook 
+
+## Ferramentas Utilizadas 
+
+### Elyra Notebook 
 
 ``` bash
 
-$ docker run  -e GRANT_SUDO=yes -it -p 8888:8888 elyra/elyra:dev jupyter lab --debug
+$ docker run -u root  -e GRANT_SUDO=yes -it -p 8888:8888 elyra/elyra:dev jupyter lab --debug --allow-root
 
 ```
 !["Imagem ilustrativa"](elyra-pipelines.gif)
 
 Fonte: https://github.com/elyra-ai/elyra
 
-## Portainer CE
+### Portainer CE
 
 
 ``` bash
@@ -30,17 +58,23 @@ $ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /
 Fonte: https://docs.portainer.io/v/ce-2.9/start/install/server/docker/linux
 
 
-## Arquitetura de dados(Banco + Visualizador)
+### Metabase
 
--> Metabase
 
 ``` bash
 
 $ docker run -d -p 3000:3000 --name metabase metabase/metabase
 
-```
--> MySQL
 
+```
+![Metabase](https://www.metabase.com/images/posts/metabase-0.40/editing-dashboard.gif)
+
+Fonte: https://www.metabase.com/
+
+
+
+
+---
 
 # Quem é a ST IT?
 

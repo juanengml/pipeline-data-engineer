@@ -1,16 +1,22 @@
 # Arquitetura de dados (End to End)
-![](https://raw.githubusercontent.com/juanengml/talent-data-analyst-lv4/main/Arquitetura%20de%20Dados.png)
+![](src/Arquitetura de Dados.png)
 
 ## Montando infra 
 ``` bash
 
-$ python src/infra.py 
+$ virtualenv env --python=python3
+
+$ source env/bin/activate  
+
+(env) $ pip install -r requirements.txt 
+
+(env) $ python src/infra.py 
 
 ```
-## Configurando Banco
+## Configurando Banco de dados e Orquestrador 
 
-  - Subir banco (Docker MySQL) 
-  - Configurar Acesso do MySQL no Metabase 
+* LINK - 
+
   
 ## Rodar Pipeline
   - Clocar Repo 
