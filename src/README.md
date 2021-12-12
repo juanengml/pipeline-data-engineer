@@ -25,8 +25,7 @@ $ source env/bin/activate
 
 #### Subindo banco de dados no Portainer (MySQL)
 
-
-
+![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/src/2021-12-12-14-42-03.gif)
 
 
 #### Configurar Acesso do MySQL no Metabase 
