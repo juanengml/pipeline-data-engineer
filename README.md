@@ -27,6 +27,23 @@ PS: Siga o passo a passo no linka abaixo
 #### Resultados Etapa 2 (perguntas)
 ![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/Etapa%202/Resultado%20Etapa%202.gif)
 
+``` sql 
+- --Qual é o valor de gasto médio por estado (`state`)?
+select uf_code, avg(totalSpent) from tlb_users_prod group by uf_code order by  uf_code desc;
+
+--- Qual é o valor de gasto médio por `jobArea`?
+select jobArea, avg(totalSpent) from tlb_users_prod group by jobArea ;,
+
+---Qual é a PF que gastou menos (`totalSpent`)?
+select name,document,pessoa,totalSpent from tlb_users_prod where pessoa = 'FISICA' order by totalSpent asc limit 1;
+
+--- Quantos nomes e documentos repetidos existem nesse dataset?
+SELECT  name, document, COUNT(*) FROM    tlb_users_prod GROUP BY     name, document HAVING      COUNT(*) > 1
+
+---Quantas linhas existem nesse dataset?
+select count(*) from tlb_users_prod
+
+```
 --- 
 
 
