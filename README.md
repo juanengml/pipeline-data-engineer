@@ -1,5 +1,14 @@
 # Arquitetura de dados (End to End)
 
+Arquitetura foi inspirada dentro dos padrões de pipeline do datafactory com databricks, a proposta e ter uma plataforma unificada de data engineer com todas etapas conhecidas dentro de um data pipeline, Data Source, Data Cleanning, Data Quality e Delivery. 
+
+* Data Source: Arquivos e S3
+* Data Cleanning e Data Quality: Elyra
+* Data Delivery: MySQL + Metabase
+
+
+---
+
 ![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/src/Arquitetura%20de%20Dados.png)
 
 ## Requisitos 
@@ -19,6 +28,29 @@ PS: Siga o passo a passo no linka abaixo
 #### Resultados Etapa 1 (perguntas)
 ![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/Etapa%201/Resultados%20Etapa%201.PNG)
 
+##### SQL USADO NO PAINEL ACIMA 
+
+``` sql
+---Quantos clientes temos nessa base?
+select count(nomes) from tbl_users;
+
+---Qual a média de idade dos clientes?
+select avg(idade) from tbl_users;
+
+---Quantos clientes nessa base pertencem a cada estado?
+select count(nomes),uf_code from tbl_users group by uf_code;
+
+---Quantos CPFs válidos e inválidos foram encontrados?
+select count(*) from tbl_users where isvalid_cpf = True;
+select count(isvalid_cpf) as 'Total CPF invalido', count(isvalid_cnpj) as "Total CNPJ invalido" from tbl_users where isvalid_cpf = False and isvalid_cnpj = False
+
+
+---Quantos CNPJs válidos e inválidos foram encontrados?
+select count(*) from tbl_users where isvalid_cnpj = True;
+select count(isvalid_cpf) as 'Total CPF invalido', count(isvalid_cnpj) as "Total CNPJ invalido" from tbl_users where isvalid_cpf = False and isvalid_cnpj = False
+
+```
+
 
 #### ✔️ Rodar pipeline Etapa 2
 ![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/Etapa%202/Etapa%202%20-%20Running.gif)
@@ -26,6 +58,8 @@ PS: Siga o passo a passo no linka abaixo
 
 #### Resultados Etapa 2 (perguntas)
 ![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/Etapa%202/Resultado%20Etapa%202.gif)
+
+##### SQL USADO NO PAINEL ACIMA
 
 ``` sql 
 - --Qual é o valor de gasto médio por estado (`state`)?
