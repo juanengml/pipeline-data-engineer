@@ -35,7 +35,7 @@ $ source env/bin/activate
 
 
 #### Resultados Etapa 2 (perguntas)
-
+![](https://github.com/juanengml/talent-data-analyst-lv4/raw/main/Etapa%202/Resultado%20Etapa%202.gif)
 
 --- 
 
